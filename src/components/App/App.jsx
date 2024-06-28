@@ -14,7 +14,7 @@ export default function App() {
                 name={userData.username}
                 tag={userData.tag}
                 location={userData.location}
-                image={userData.image}
+                image={userData.avatar}
                 stats={userData.stats}
             />
             <Friends friends={friends} />
