@@ -1,6 +1,7 @@
 import userData from "../../userData.json"
 import friends from "../../friends.json"
-import transaction from "../../transaction.json"
+import transactions from "../../transactions.json"
+import "modern-normalize"
 
 
 import Profile from "../Profile/Profile"
@@ -18,7 +19,7 @@ export default function App() {
                 stats={userData.stats}
             />
             <Friends friends={friends} />
-            <TransactionHistory item={transaction} />
+            <TransactionHistory items={transactions} />
         </>
     )
 }
