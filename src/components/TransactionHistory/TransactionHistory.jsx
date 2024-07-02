@@ -1,4 +1,4 @@
-import TransactiomHistoryItem from "../TransactionHistoryItem/TransactionHistoryItem"
+import TransactionHistoryItem from "../TransactionHistoryItem/TransactionHistoryItem"
 import css from "./TransactionHistory.module.css"
 
 export default function TransactionHistory({ items }) {
@@ -13,7 +13,7 @@ export default function TransactionHistory({ items }) {
             </thead>
             <tbody className={css.tlist}>
                 {items.map((item) => {
-                    return <TransactiomHistoryItem key={item.id} transaction={item} />
+                    return <TransactionHistoryItem key={item.id} transaction={item} />
                 })}
             </tbody>
         </table>

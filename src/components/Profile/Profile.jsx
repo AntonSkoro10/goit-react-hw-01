@@ -1,6 +1,6 @@
 import css from "./Profile.module.css"
 
-export default function Profile({ username, name, tag, location, avatar, stats }) {
+export default function Profile({  name, tag, location, avatar, stats }) {
     return (
         <div className={css.container}>
   <div className={css.profile}>
@@ -8,7 +8,7 @@ export default function Profile({ username, name, tag, location, avatar, stats }
       src={avatar}
       alt={name}
     />
-        <p className={css.name}>{username}</p>
+        <p className={css.name}>Petra Marica</p>
         <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
   </div>

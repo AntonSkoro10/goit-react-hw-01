@@ -1,4 +1,6 @@
-export default function TransactiomHistoryItem({ transaction: type, amount, currency }) {
+export default function TransactionHistoryItem({
+    transaction: { type, amount, currency },
+}) {
     return (
         <tr>
             <td>{type}</td>
